@@ -2,12 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Face Toggle - Commit 2</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced Face Toggle</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -15,6 +19,10 @@
     <div class="container">
 
         <h1>😊 Face Toggle</h1>
+
+        <p class="subtitle">
+            Change the face using JavaScript
+        </p>
 
         <div id="face" class="face">
             😊
@@ -28,8 +36,27 @@
             I am feeling happy!
         </p>
 
-        <button onclick="toggleFace()">
-            Change Face
+        <div class="counter">
+            Face <span id="counter">1</span> / 5
+        </div>
+
+        <div class="buttons">
+
+            <button onclick="previousFace()">
+                ⬅ Previous
+            </button>
+
+            <button onclick="toggleFace()">
+                Next ➡
+            </button>
+
+        </div>
+
+        <button class="randomButton"
+            onclick="randomFace()">
+
+            🎲 Random Face
+
         </button>
 
     </div>
